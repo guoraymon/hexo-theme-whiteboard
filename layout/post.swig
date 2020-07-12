@@ -6,12 +6,12 @@
 {% endblock %}
 
 {% block title %}{{ page.title }} - {{ config.title }}{% endblock %}
-{% block keywords %}{{ tag_names.render(page.tags) }}{% endblock %}
-{% block description %}{{ page.abstract }}{% endblock %}
+{% block keywords %}{{ page.keywords }}{% endblock %}
+{% block description %}{{ page.description }}{% endblock %}
 
 {% block content %}
     <article>
-        <h1>{{ page.title }}</h1>
+        <h1 class="title">{{ page.title }}</h1>
         {{ page.content }}
     </article>
 {% endblock %}
